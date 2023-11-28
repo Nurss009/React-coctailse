@@ -11,3 +11,153 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #e5e5e5;
+}
+
+.container{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.col-3{
+  max-width: 25%;
+  padding: 15px;
+}
+.col-7{
+  max-width: 58.33%;
+  padding: 15px;
+}
+.col-5{
+  max-width: 41.33%;
+  padding: 15px;
+}
+.col-4{
+  max-width: 33.33%;
+  padding: 15px;
+}
+img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.box{
+  background-color: white;
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  border-radius: 12px;
+}
+
+p{
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+}
+.link{
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: 200;
+  color: black;
+}
+
+h2{
+  font-weight: 600;
+  color: grey;
+}
+.inner-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.boxLink{
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+
+header{
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+}
+nav .nav {
+  text-decoration: none;
+  color: #e5e5e5;
+  font-size: 24px;
+}
+
+.nav_title{
+  color: white;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+.nav_title:hover{
+  background-color: grey;
+  transition: 0.6s;
+}
+
+nav{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+input{
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin-right: 15px;
+  border: 1px solid gray;
+  font-size: 16px;
+  color: darkblue;
+}
+
+button{
+  padding: 5px 20px;
+  border: 1px solid indigo;
+  background-color: darkgray;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+footer{
+  background-color: black;
+  padding: 50px 0;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footerr a{
+  text-decoration: none;
+  color: white;
+}
+.footerr {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+
+}
+
+iframe{
+  width: 100%;
+}

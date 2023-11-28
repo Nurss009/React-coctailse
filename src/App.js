@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {Router, Route, Routes} from "react-router-dom";
+import HomePage from "./Pages/HomPage";
+import Header from "./Components/Heder";
+import IngredientPage from "./Components/IngredientPage";
+import FooterPage from "./Pages/Foter";
+import CoctailPage from "./Pages/CoctailPage";
+import SearchPage from "./Pages/SearchPage";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App =()=>{
+    return(
+        <>
+            <Header/>
+         <Routes>
+                 <Route path='/' element={<HomePage/>}/>
+                 <Route path='/search' element={<SearchPage/>}/>
+                 <Route path='/drinks/:idDrink' element={<CoctailPage/>}/>
+                 <Route path='/ingredient/:name' element={<IngredientPage/>}/>
+         </Routes>
+            <FooterPage/>
+        </>
+    )
 }
-
-export default App;
+export default App
