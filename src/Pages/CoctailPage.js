@@ -59,6 +59,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import IngredientList from "./IngredientList";
+import IngredientPage from "../Components/IngredientPage";
 
 const CoctailPage = () => {
     const { idDrink } = useParams();
@@ -84,10 +85,16 @@ const CoctailPage = () => {
     return (
         <div className={'container'}>
             <div className="row">
+                <div className="col-5">
+                    <div className="box">
+                        <h2>{drink.strDrink}</h2>
+                        <img src={drink.strDrinkThumb} alt=""/>
+                    </div>
+                </div>
                 <div className="col-7">
                     <div className="inner-box">
                         <h2>Ингредиенты коктейля</h2>
-                        <IngredientList ingredients={ingredients} />
+                        <IngredientPage ingredients={ingredients} />
                     </div>
                 </div>
             </div>
